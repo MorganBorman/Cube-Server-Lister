@@ -26,7 +26,7 @@
 */
 
 #define CSL_EX_VERSION_MIN      102
-#define CSL_EX_VERSION_MAX      104
+#define CSL_EX_VERSION_MAX      105
 // commands
 #define CSL_EX_PING_UPTIME      0
 #define CSL_EX_PING_PLAYERSTATS 1

@@ -614,7 +614,7 @@ void CslDlgExtended::DoShow(CslServerInfo *info)
     SetFixedLabelText(label_server,m_info->GetBestDescription());
     SetFixedLabelText(label_mode,m_info->GameMode);
     if (m_info->TimeRemain>0)
-        s=FormatSeconds(m_info->TimeRemain*60,true,true);
+		s=FormatSeconds(m_info->TimeRemain*60,true,true);
     else
         s=_("Time is up");
     label_remaining->SetLabel(s);

@@ -143,7 +143,7 @@ CslFrame::CslFrame(wxWindow* parent,int id,const wxString& title,
                              wxT("?IP="));
         CslGeoIP::AddService(wxT("MaxMind (Demo)"),
                              wxT("http://www.maxmind.com/"),
-                             wxT("app/locate_ip?ips="));
+                             wxT("app/locate_demo_ip?ips="));
     }
 
     CslTTS::Init(wxGetApp().GetLanguage());

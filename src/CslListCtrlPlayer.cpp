@@ -110,9 +110,13 @@ wxString CslPanelPlayer::GetLabelText()
         s+=info->GameMode+_(" on ");
     if (!info->Map.IsEmpty())
         s+=info->Map+wxT(" ");
-    if (info->TimeRemain>0)
-        s+=wxString::Format(wxT("(< %d %s)"),info->TimeRemain,info->TimeRemain==1 ?
-                            _("Minute"):_("Minutes"))+wxT(" ");
+
+	if (info->TimeRemain>0)
+		if (info->Protocol >= 258) 	
+			s+=wxString::Format(wxT("%s"), FormatSeconds(info->TimeRemain).c_str())+wxT(" ");
+		else
+			s+=wxString::Format(wxT("(< %d %s)"),info->TimeRemain,info->TimeRemain==1 ?
+								_("Minute"):_("Minutes"))+wxT(" ");
     s.Replace(wxT("&"),wxT("&&"));
 
     return s;
