@@ -1,0 +1,14 @@
+CslDlgAddMaster.o: CslDlgAddMaster.cpp engine/CslEngine.h engine/CslUDP.h \
+ engine/CslGame.h engine/CslExtendedInfo.h CslApp.h CslDlgAddMaster.h
+
+engine/CslEngine.h:
+
+engine/CslUDP.h:
+
+engine/CslGame.h:
+
+engine/CslExtendedInfo.h:
+
+CslApp.h:
+
+CslDlgAddMaster.h:

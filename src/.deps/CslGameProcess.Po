@@ -1,0 +1,29 @@
+CslGameProcess.o: CslGameProcess.cpp engine/CslGame.h \
+ engine/CslExtendedInfo.h CslDlgOutput.h CslToolTip.h CslSettings.h \
+ /usr/include/wx-2.8/wx/wxprec.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/wx.h engine/CslEngine.h engine/CslUDP.h \
+ engine/CslGame.h CslGameProcess.h
+
+engine/CslGame.h:
+
+engine/CslExtendedInfo.h:
+
+CslDlgOutput.h:
+
+CslToolTip.h:
+
+CslSettings.h:
+
+/usr/include/wx-2.8/wx/wxprec.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/wx.h:
+
+engine/CslEngine.h:
+
+engine/CslUDP.h:
+
+engine/CslGame.h:
+
+CslGameProcess.h:

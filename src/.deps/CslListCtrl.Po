@@ -1,0 +1,664 @@
+CslListCtrl.o: CslListCtrl.cpp CslSettings.h \
+ /usr/include/wx-2.8/wx/wxprec.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/wx.h engine/CslEngine.h engine/CslUDP.h \
+ engine/CslGame.h engine/CslExtendedInfo.h CslGeoIP.h \
+ ../src/libGeoIP/GeoIP.h /usr/include/sys/types.h \
+ /usr/include/sys/socket.h /usr/include/netinet/in.h \
+ /usr/include/features.h /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/types.h \
+ /usr/include/bits/in.h /usr/include/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/arpa/inet.h \
+ /usr/include/stdio.h /usr/include/stdlib.h /usr/include/string.h \
+ /usr/include/sys/stat.h CslFlags.h ../src/img/flags/ad.xpm \
+ ../src/img/flags/ae.xpm ../src/img/flags/af.xpm ../src/img/flags/ag.xpm \
+ ../src/img/flags/ai.xpm ../src/img/flags/al.xpm ../src/img/flags/am.xpm \
+ ../src/img/flags/an.xpm ../src/img/flags/ao.xpm ../src/img/flags/aq.xpm \
+ ../src/img/flags/ar.xpm ../src/img/flags/as.xpm ../src/img/flags/at.xpm \
+ ../src/img/flags/au.xpm ../src/img/flags/aw.xpm ../src/img/flags/ax.xpm \
+ ../src/img/flags/az.xpm ../src/img/flags/ba.xpm ../src/img/flags/bb.xpm \
+ ../src/img/flags/bd.xpm ../src/img/flags/be.xpm ../src/img/flags/bf.xpm \
+ ../src/img/flags/bg.xpm ../src/img/flags/bh.xpm ../src/img/flags/bi.xpm \
+ ../src/img/flags/bj.xpm ../src/img/flags/bm.xpm ../src/img/flags/bn.xpm \
+ ../src/img/flags/bo.xpm ../src/img/flags/br.xpm ../src/img/flags/bs.xpm \
+ ../src/img/flags/bt.xpm ../src/img/flags/bv.xpm ../src/img/flags/bw.xpm \
+ ../src/img/flags/by.xpm ../src/img/flags/bz.xpm ../src/img/flags/ca.xpm \
+ ../src/img/flags/cc.xpm ../src/img/flags/cd.xpm ../src/img/flags/cf.xpm \
+ ../src/img/flags/cg.xpm ../src/img/flags/ch.xpm ../src/img/flags/ci.xpm \
+ ../src/img/flags/ck.xpm ../src/img/flags/cl.xpm ../src/img/flags/cm.xpm \
+ ../src/img/flags/cn.xpm ../src/img/flags/co.xpm ../src/img/flags/cr.xpm \
+ ../src/img/flags/cs.xpm ../src/img/flags/cu.xpm ../src/img/flags/cv.xpm \
+ ../src/img/flags/cx.xpm ../src/img/flags/cy.xpm ../src/img/flags/cz.xpm \
+ ../src/img/flags/de.xpm ../src/img/flags/dj.xpm ../src/img/flags/dk.xpm \
+ ../src/img/flags/dm.xpm ../src/img/flags/do.xpm ../src/img/flags/dz.xpm \
+ ../src/img/flags/ec.xpm ../src/img/flags/ee.xpm ../src/img/flags/eg.xpm \
+ ../src/img/flags/eh.xpm ../src/img/flags/er.xpm ../src/img/flags/es.xpm \
+ ../src/img/flags/et.xpm ../src/img/flags/fi.xpm ../src/img/flags/fj.xpm \
+ ../src/img/flags/fk.xpm ../src/img/flags/fm.xpm ../src/img/flags/fo.xpm \
+ ../src/img/flags/fr.xpm ../src/img/flags/fx.xpm ../src/img/flags/ga.xpm \
+ ../src/img/flags/gb.xpm ../src/img/flags/gd.xpm ../src/img/flags/ge.xpm \
+ ../src/img/flags/gf.xpm ../src/img/flags/gg.xpm ../src/img/flags/gh.xpm \
+ ../src/img/flags/gi.xpm ../src/img/flags/gl.xpm ../src/img/flags/gm.xpm \
+ ../src/img/flags/gn.xpm ../src/img/flags/gp.xpm ../src/img/flags/gq.xpm \
+ ../src/img/flags/gr.xpm ../src/img/flags/gs.xpm ../src/img/flags/gt.xpm \
+ ../src/img/flags/gu.xpm ../src/img/flags/gw.xpm ../src/img/flags/gy.xpm \
+ ../src/img/flags/hk.xpm ../src/img/flags/hm.xpm ../src/img/flags/hn.xpm \
+ ../src/img/flags/hr.xpm ../src/img/flags/ht.xpm ../src/img/flags/hu.xpm \
+ ../src/img/flags/id.xpm ../src/img/flags/ie.xpm ../src/img/flags/il.xpm \
+ ../src/img/flags/in.xpm ../src/img/flags/io.xpm ../src/img/flags/iq.xpm \
+ ../src/img/flags/ir.xpm ../src/img/flags/is.xpm ../src/img/flags/it.xpm \
+ ../src/img/flags/je.xpm ../src/img/flags/jm.xpm ../src/img/flags/jo.xpm \
+ ../src/img/flags/jp.xpm ../src/img/flags/ke.xpm ../src/img/flags/kg.xpm \
+ ../src/img/flags/kh.xpm ../src/img/flags/ki.xpm ../src/img/flags/km.xpm \
+ ../src/img/flags/kn.xpm ../src/img/flags/kp.xpm ../src/img/flags/kr.xpm \
+ ../src/img/flags/kw.xpm ../src/img/flags/ky.xpm ../src/img/flags/kz.xpm \
+ ../src/img/flags/la.xpm ../src/img/flags/lb.xpm ../src/img/flags/lc.xpm \
+ ../src/img/flags/li.xpm ../src/img/flags/lk.xpm \
+ ../src/img/flags/local.xpm ../src/img/flags/lr.xpm \
+ ../src/img/flags/ls.xpm ../src/img/flags/lt.xpm ../src/img/flags/lu.xpm \
+ ../src/img/flags/lv.xpm ../src/img/flags/ly.xpm ../src/img/flags/ma.xpm \
+ ../src/img/flags/mc.xpm ../src/img/flags/md.xpm ../src/img/flags/me.xpm \
+ ../src/img/flags/mg.xpm ../src/img/flags/mh.xpm ../src/img/flags/mk.xpm \
+ ../src/img/flags/ml.xpm ../src/img/flags/mm.xpm ../src/img/flags/mn.xpm \
+ ../src/img/flags/mo.xpm ../src/img/flags/mp.xpm ../src/img/flags/mq.xpm \
+ ../src/img/flags/mr.xpm ../src/img/flags/ms.xpm ../src/img/flags/mt.xpm \
+ ../src/img/flags/mu.xpm ../src/img/flags/mv.xpm ../src/img/flags/mw.xpm \
+ ../src/img/flags/mx.xpm ../src/img/flags/my.xpm ../src/img/flags/mz.xpm \
+ ../src/img/flags/na.xpm ../src/img/flags/nc.xpm ../src/img/flags/ne.xpm \
+ ../src/img/flags/nf.xpm ../src/img/flags/ng.xpm ../src/img/flags/ni.xpm \
+ ../src/img/flags/nl.xpm ../src/img/flags/no.xpm ../src/img/flags/np.xpm \
+ ../src/img/flags/nr.xpm ../src/img/flags/nu.xpm ../src/img/flags/nz.xpm \
+ ../src/img/flags/om.xpm ../src/img/flags/pa.xpm ../src/img/flags/pe.xpm \
+ ../src/img/flags/pf.xpm ../src/img/flags/pg.xpm ../src/img/flags/ph.xpm \
+ ../src/img/flags/pk.xpm ../src/img/flags/pl.xpm ../src/img/flags/pm.xpm \
+ ../src/img/flags/pn.xpm ../src/img/flags/pr.xpm ../src/img/flags/ps.xpm \
+ ../src/img/flags/pt.xpm ../src/img/flags/pw.xpm ../src/img/flags/py.xpm \
+ ../src/img/flags/qa.xpm ../src/img/flags/re.xpm ../src/img/flags/ro.xpm \
+ ../src/img/flags/rs.woa.xpm ../src/img/flags/rs.xpm \
+ ../src/img/flags/ru.xpm ../src/img/flags/rw.xpm ../src/img/flags/sa.xpm \
+ ../src/img/flags/sb.xpm ../src/img/flags/sc.xpm ../src/img/flags/sd.xpm \
+ ../src/img/flags/se.xpm ../src/img/flags/sg.xpm ../src/img/flags/sh.xpm \
+ ../src/img/flags/si.xpm ../src/img/flags/sj.xpm ../src/img/flags/sk.xpm \
+ ../src/img/flags/sl.xpm ../src/img/flags/sm.xpm ../src/img/flags/sn.xpm \
+ ../src/img/flags/so.xpm ../src/img/flags/sr.xpm ../src/img/flags/st.xpm \
+ ../src/img/flags/sv.xpm ../src/img/flags/sy.xpm ../src/img/flags/sz.xpm \
+ ../src/img/flags/tc.xpm ../src/img/flags/td.xpm ../src/img/flags/tf.xpm \
+ ../src/img/flags/tg.xpm ../src/img/flags/th.xpm ../src/img/flags/tj.xpm \
+ ../src/img/flags/tk.xpm ../src/img/flags/tl.xpm ../src/img/flags/tm.xpm \
+ ../src/img/flags/tn.xpm ../src/img/flags/to.xpm ../src/img/flags/tp.xpm \
+ ../src/img/flags/tr.xpm ../src/img/flags/tt.xpm ../src/img/flags/tv.xpm \
+ ../src/img/flags/tw.xpm ../src/img/flags/tz.xpm ../src/img/flags/ua.xpm \
+ ../src/img/flags/ug.xpm ../src/img/flags/um.xpm \
+ ../src/img/flags/unknown.xpm ../src/img/flags/us.xpm \
+ ../src/img/flags/uy.xpm ../src/img/flags/uz.xpm ../src/img/flags/va.xpm \
+ ../src/img/flags/vc.xpm ../src/img/flags/ve.xpm ../src/img/flags/vg.xpm \
+ ../src/img/flags/vi.xpm ../src/img/flags/vn.xpm ../src/img/flags/vu.xpm \
+ ../src/img/flags/wf.xpm ../src/img/flags/ws.xpm ../src/img/flags/ye.xpm \
+ ../src/img/flags/yt.xpm ../src/img/flags/yu.xpm ../src/img/flags/za.xpm \
+ ../src/img/flags/zm.xpm ../src/img/flags/zw.xpm CslMenu.h CslArt.h \
+ CslListCtrl.h CslToolTip.h img/sortasc_18_12.xpm img/sortdsc_18_12.xpm
+
+CslSettings.h:
+
+/usr/include/wx-2.8/wx/wxprec.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/wx.h:
+
+engine/CslEngine.h:
+
+engine/CslUDP.h:
+
+engine/CslGame.h:
+
+engine/CslExtendedInfo.h:
+
+CslGeoIP.h:
+
+../src/libGeoIP/GeoIP.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/features.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/in.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/string.h:
+
+/usr/include/sys/stat.h:
+
+CslFlags.h:
+
+../src/img/flags/ad.xpm:
+
+../src/img/flags/ae.xpm:
+
+../src/img/flags/af.xpm:
+
+../src/img/flags/ag.xpm:
+
+../src/img/flags/ai.xpm:
+
+../src/img/flags/al.xpm:
+
+../src/img/flags/am.xpm:
+
+../src/img/flags/an.xpm:
+
+../src/img/flags/ao.xpm:
+
+../src/img/flags/aq.xpm:
+
+../src/img/flags/ar.xpm:
+
+../src/img/flags/as.xpm:
+
+../src/img/flags/at.xpm:
+
+../src/img/flags/au.xpm:
+
+../src/img/flags/aw.xpm:
+
+../src/img/flags/ax.xpm:
+
+../src/img/flags/az.xpm:
+
+../src/img/flags/ba.xpm:
+
+../src/img/flags/bb.xpm:
+
+../src/img/flags/bd.xpm:
+
+../src/img/flags/be.xpm:
+
+../src/img/flags/bf.xpm:
+
+../src/img/flags/bg.xpm:
+
+../src/img/flags/bh.xpm:
+
+../src/img/flags/bi.xpm:
+
+../src/img/flags/bj.xpm:
+
+../src/img/flags/bm.xpm:
+
+../src/img/flags/bn.xpm:
+
+../src/img/flags/bo.xpm:
+
+../src/img/flags/br.xpm:
+
+../src/img/flags/bs.xpm:
+
+../src/img/flags/bt.xpm:
+
+../src/img/flags/bv.xpm:
+
+../src/img/flags/bw.xpm:
+
+../src/img/flags/by.xpm:
+
+../src/img/flags/bz.xpm:
+
+../src/img/flags/ca.xpm:
+
+../src/img/flags/cc.xpm:
+
+../src/img/flags/cd.xpm:
+
+../src/img/flags/cf.xpm:
+
+../src/img/flags/cg.xpm:
+
+../src/img/flags/ch.xpm:
+
+../src/img/flags/ci.xpm:
+
+../src/img/flags/ck.xpm:
+
+../src/img/flags/cl.xpm:
+
+../src/img/flags/cm.xpm:
+
+../src/img/flags/cn.xpm:
+
+../src/img/flags/co.xpm:
+
+../src/img/flags/cr.xpm:
+
+../src/img/flags/cs.xpm:
+
+../src/img/flags/cu.xpm:
+
+../src/img/flags/cv.xpm:
+
+../src/img/flags/cx.xpm:
+
+../src/img/flags/cy.xpm:
+
+../src/img/flags/cz.xpm:
+
+../src/img/flags/de.xpm:
+
+../src/img/flags/dj.xpm:
+
+../src/img/flags/dk.xpm:
+
+../src/img/flags/dm.xpm:
+
+../src/img/flags/do.xpm:
+
+../src/img/flags/dz.xpm:
+
+../src/img/flags/ec.xpm:
+
+../src/img/flags/ee.xpm:
+
+../src/img/flags/eg.xpm:
+
+../src/img/flags/eh.xpm:
+
+../src/img/flags/er.xpm:
+
+../src/img/flags/es.xpm:
+
+../src/img/flags/et.xpm:
+
+../src/img/flags/fi.xpm:
+
+../src/img/flags/fj.xpm:
+
+../src/img/flags/fk.xpm:
+
+../src/img/flags/fm.xpm:
+
+../src/img/flags/fo.xpm:
+
+../src/img/flags/fr.xpm:
+
+../src/img/flags/fx.xpm:
+
+../src/img/flags/ga.xpm:
+
+../src/img/flags/gb.xpm:
+
+../src/img/flags/gd.xpm:
+
+../src/img/flags/ge.xpm:
+
+../src/img/flags/gf.xpm:
+
+../src/img/flags/gg.xpm:
+
+../src/img/flags/gh.xpm:
+
+../src/img/flags/gi.xpm:
+
+../src/img/flags/gl.xpm:
+
+../src/img/flags/gm.xpm:
+
+../src/img/flags/gn.xpm:
+
+../src/img/flags/gp.xpm:
+
+../src/img/flags/gq.xpm:
+
+../src/img/flags/gr.xpm:
+
+../src/img/flags/gs.xpm:
+
+../src/img/flags/gt.xpm:
+
+../src/img/flags/gu.xpm:
+
+../src/img/flags/gw.xpm:
+
+../src/img/flags/gy.xpm:
+
+../src/img/flags/hk.xpm:
+
+../src/img/flags/hm.xpm:
+
+../src/img/flags/hn.xpm:
+
+../src/img/flags/hr.xpm:
+
+../src/img/flags/ht.xpm:
+
+../src/img/flags/hu.xpm:
+
+../src/img/flags/id.xpm:
+
+../src/img/flags/ie.xpm:
+
+../src/img/flags/il.xpm:
+
+../src/img/flags/in.xpm:
+
+../src/img/flags/io.xpm:
+
+../src/img/flags/iq.xpm:
+
+../src/img/flags/ir.xpm:
+
+../src/img/flags/is.xpm:
+
+../src/img/flags/it.xpm:
+
+../src/img/flags/je.xpm:
+
+../src/img/flags/jm.xpm:
+
+../src/img/flags/jo.xpm:
+
+../src/img/flags/jp.xpm:
+
+../src/img/flags/ke.xpm:
+
+../src/img/flags/kg.xpm:
+
+../src/img/flags/kh.xpm:
+
+../src/img/flags/ki.xpm:
+
+../src/img/flags/km.xpm:
+
+../src/img/flags/kn.xpm:
+
+../src/img/flags/kp.xpm:
+
+../src/img/flags/kr.xpm:
+
+../src/img/flags/kw.xpm:
+
+../src/img/flags/ky.xpm:
+
+../src/img/flags/kz.xpm:
+
+../src/img/flags/la.xpm:
+
+../src/img/flags/lb.xpm:
+
+../src/img/flags/lc.xpm:
+
+../src/img/flags/li.xpm:
+
+../src/img/flags/lk.xpm:
+
+../src/img/flags/local.xpm:
+
+../src/img/flags/lr.xpm:
+
+../src/img/flags/ls.xpm:
+
+../src/img/flags/lt.xpm:
+
+../src/img/flags/lu.xpm:
+
+../src/img/flags/lv.xpm:
+
+../src/img/flags/ly.xpm:
+
+../src/img/flags/ma.xpm:
+
+../src/img/flags/mc.xpm:
+
+../src/img/flags/md.xpm:
+
+../src/img/flags/me.xpm:
+
+../src/img/flags/mg.xpm:
+
+../src/img/flags/mh.xpm:
+
+../src/img/flags/mk.xpm:
+
+../src/img/flags/ml.xpm:
+
+../src/img/flags/mm.xpm:
+
+../src/img/flags/mn.xpm:
+
+../src/img/flags/mo.xpm:
+
+../src/img/flags/mp.xpm:
+
+../src/img/flags/mq.xpm:
+
+../src/img/flags/mr.xpm:
+
+../src/img/flags/ms.xpm:
+
+../src/img/flags/mt.xpm:
+
+../src/img/flags/mu.xpm:
+
+../src/img/flags/mv.xpm:
+
+../src/img/flags/mw.xpm:
+
+../src/img/flags/mx.xpm:
+
+../src/img/flags/my.xpm:
+
+../src/img/flags/mz.xpm:
+
+../src/img/flags/na.xpm:
+
+../src/img/flags/nc.xpm:
+
+../src/img/flags/ne.xpm:
+
+../src/img/flags/nf.xpm:
+
+../src/img/flags/ng.xpm:
+
+../src/img/flags/ni.xpm:
+
+../src/img/flags/nl.xpm:
+
+../src/img/flags/no.xpm:
+
+../src/img/flags/np.xpm:
+
+../src/img/flags/nr.xpm:
+
+../src/img/flags/nu.xpm:
+
+../src/img/flags/nz.xpm:
+
+../src/img/flags/om.xpm:
+
+../src/img/flags/pa.xpm:
+
+../src/img/flags/pe.xpm:
+
+../src/img/flags/pf.xpm:
+
+../src/img/flags/pg.xpm:
+
+../src/img/flags/ph.xpm:
+
+../src/img/flags/pk.xpm:
+
+../src/img/flags/pl.xpm:
+
+../src/img/flags/pm.xpm:
+
+../src/img/flags/pn.xpm:
+
+../src/img/flags/pr.xpm:
+
+../src/img/flags/ps.xpm:
+
+../src/img/flags/pt.xpm:
+
+../src/img/flags/pw.xpm:
+
+../src/img/flags/py.xpm:
+
+../src/img/flags/qa.xpm:
+
+../src/img/flags/re.xpm:
+
+../src/img/flags/ro.xpm:
+
+../src/img/flags/rs.woa.xpm:
+
+../src/img/flags/rs.xpm:
+
+../src/img/flags/ru.xpm:
+
+../src/img/flags/rw.xpm:
+
+../src/img/flags/sa.xpm:
+
+../src/img/flags/sb.xpm:
+
+../src/img/flags/sc.xpm:
+
+../src/img/flags/sd.xpm:
+
+../src/img/flags/se.xpm:
+
+../src/img/flags/sg.xpm:
+
+../src/img/flags/sh.xpm:
+
+../src/img/flags/si.xpm:
+
+../src/img/flags/sj.xpm:
+
+../src/img/flags/sk.xpm:
+
+../src/img/flags/sl.xpm:
+
+../src/img/flags/sm.xpm:
+
+../src/img/flags/sn.xpm:
+
+../src/img/flags/so.xpm:
+
+../src/img/flags/sr.xpm:
+
+../src/img/flags/st.xpm:
+
+../src/img/flags/sv.xpm:
+
+../src/img/flags/sy.xpm:
+
+../src/img/flags/sz.xpm:
+
+../src/img/flags/tc.xpm:
+
+../src/img/flags/td.xpm:
+
+../src/img/flags/tf.xpm:
+
+../src/img/flags/tg.xpm:
+
+../src/img/flags/th.xpm:
+
+../src/img/flags/tj.xpm:
+
+../src/img/flags/tk.xpm:
+
+../src/img/flags/tl.xpm:
+
+../src/img/flags/tm.xpm:
+
+../src/img/flags/tn.xpm:
+
+../src/img/flags/to.xpm:
+
+../src/img/flags/tp.xpm:
+
+../src/img/flags/tr.xpm:
+
+../src/img/flags/tt.xpm:
+
+../src/img/flags/tv.xpm:
+
+../src/img/flags/tw.xpm:
+
+../src/img/flags/tz.xpm:
+
+../src/img/flags/ua.xpm:
+
+../src/img/flags/ug.xpm:
+
+../src/img/flags/um.xpm:
+
+../src/img/flags/unknown.xpm:
+
+../src/img/flags/us.xpm:
+
+../src/img/flags/uy.xpm:
+
+../src/img/flags/uz.xpm:
+
+../src/img/flags/va.xpm:
+
+../src/img/flags/vc.xpm:
+
+../src/img/flags/ve.xpm:
+
+../src/img/flags/vg.xpm:
+
+../src/img/flags/vi.xpm:
+
+../src/img/flags/vn.xpm:
+
+../src/img/flags/vu.xpm:
+
+../src/img/flags/wf.xpm:
+
+../src/img/flags/ws.xpm:
+
+../src/img/flags/ye.xpm:
+
+../src/img/flags/yt.xpm:
+
+../src/img/flags/yu.xpm:
+
+../src/img/flags/za.xpm:
+
+../src/img/flags/zm.xpm:
+
+../src/img/flags/zw.xpm:
+
+CslMenu.h:
+
+CslArt.h:
+
+CslListCtrl.h:
+
+CslToolTip.h:
+
+img/sortasc_18_12.xpm:
+
+img/sortdsc_18_12.xpm:

@@ -1,0 +1,26 @@
+CslDlgSettings.o: CslDlgSettings.cpp engine/CslEngine.h engine/CslUDP.h \
+ engine/CslGame.h engine/CslExtendedInfo.h CslApp.h CslTTS.h \
+ CslDlgSettings.h CslSettings.h /usr/include/wx-2.8/wx/wxprec.h \
+ /usr/include/wx-2.8/wx/defs.h /usr/include/wx-2.8/wx/wx.h
+
+engine/CslEngine.h:
+
+engine/CslUDP.h:
+
+engine/CslGame.h:
+
+engine/CslExtendedInfo.h:
+
+CslApp.h:
+
+CslTTS.h:
+
+CslDlgSettings.h:
+
+CslSettings.h:
+
+/usr/include/wx-2.8/wx/wxprec.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/wx.h:

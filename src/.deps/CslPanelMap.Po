@@ -1,0 +1,3 @@
+CslPanelMap.o: CslPanelMap.cpp CslPanelMap.h
+
+CslPanelMap.h:

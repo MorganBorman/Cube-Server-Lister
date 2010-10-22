@@ -1,0 +1,15 @@
+CslTools.o: CslTools.cpp /usr/include/sys/time.h /usr/include/features.h \
+ /usr/include/bits/types.h /usr/include/time.h /usr/include/bits/time.h \
+ /usr/include/sys/select.h
+
+/usr/include/sys/time.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/select.h:

@@ -1,0 +1,195 @@
+CslFrame.o: CslFrame.cpp engine/CslEngine.h engine/CslUDP.h \
+ engine/CslGame.h engine/CslExtendedInfo.h engine/CslGameSauerbraten.h \
+ engine/CslGameAssaultCube.h engine/CslGameBloodFrontier.h \
+ engine/CslGameCube.h CslApp.h CslGeoIP.h ../src/libGeoIP/GeoIP.h \
+ /usr/include/sys/types.h /usr/include/sys/socket.h \
+ /usr/include/netinet/in.h /usr/include/features.h /usr/include/stdint.h \
+ /usr/include/bits/wchar.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/types.h /usr/include/bits/in.h /usr/include/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/arpa/inet.h \
+ /usr/include/stdio.h /usr/include/stdlib.h /usr/include/string.h \
+ /usr/include/sys/stat.h CslDlgAbout.h CslDlgAddMaster.h \
+ CslDlgConnectWait.h CslDlgGeneric.h CslGameProcess.h CslFrame.h \
+ CslVersionCheck.h CslMenu.h CslArt.h CslDlgExtended.h CslPanelMap.h \
+ CslListCtrlPlayer.h CslListCtrl.h CslToolTip.h CslStatusBar.h \
+ CslDlgSettings.h CslSettings.h /usr/include/wx-2.8/wx/wxprec.h \
+ /usr/include/wx-2.8/wx/defs.h /usr/include/wx-2.8/wx/wx.h \
+ CslListCtrlServer.h CslListCtrlInfo.h CslDlgOutput.h CslDlgTraffic.h \
+ CslListCtrlCountry.h CslListCtrlPlayerSearch.h CslGameConnection.h \
+ CslTTS.h CslIPC.h CslIRC.h \
+ /usr/include/wx-2.8/wx/richtext/richtextbuffer.h \
+ /usr/include/wx-2.8/wx/list.h /usr/include/wx-2.8/wx/textctrl.h \
+ /usr/include/wx-2.8/wx/bitmap.h /usr/include/wx-2.8/wx/image.h \
+ /usr/include/wx-2.8/wx/cmdproc.h /usr/include/wx-2.8/wx/object.h \
+ /usr/include/wx-2.8/wx/txtstrm.h /usr/include/wx-2.8/wx/stream.h \
+ /usr/include/wx-2.8/wx/convauto.h /usr/include/wx-2.8/wx/dataobj.h \
+ irc/CslIRCEngine.h ../src/irc/libircclient/include/libircclient.h \
+ /usr/include/sys/select.h \
+ ../src/irc/libircclient/include/libirc_errors.h \
+ ../src/irc/libircclient/include/libirc_rfcnumeric.h \
+ ../src/irc/libircclient/include/libirc_events.h \
+ ../src/irc/libircclient/include/libirc_options.h img/csl_48_png.h \
+ img/csl_24.xpm img/master_24.xpm img/close_14.xpm img/close_high_14.xpm \
+ img/close_press_14.xpm
+
+engine/CslEngine.h:
+
+engine/CslUDP.h:
+
+engine/CslGame.h:
+
+engine/CslExtendedInfo.h:
+
+engine/CslGameSauerbraten.h:
+
+engine/CslGameAssaultCube.h:
+
+engine/CslGameBloodFrontier.h:
+
+engine/CslGameCube.h:
+
+CslApp.h:
+
+CslGeoIP.h:
+
+../src/libGeoIP/GeoIP.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/features.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/in.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/string.h:
+
+/usr/include/sys/stat.h:
+
+CslDlgAbout.h:
+
+CslDlgAddMaster.h:
+
+CslDlgConnectWait.h:
+
+CslDlgGeneric.h:
+
+CslGameProcess.h:
+
+CslFrame.h:
+
+CslVersionCheck.h:
+
+CslMenu.h:
+
+CslArt.h:
+
+CslDlgExtended.h:
+
+CslPanelMap.h:
+
+CslListCtrlPlayer.h:
+
+CslListCtrl.h:
+
+CslToolTip.h:
+
+CslStatusBar.h:
+
+CslDlgSettings.h:
+
+CslSettings.h:
+
+/usr/include/wx-2.8/wx/wxprec.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/wx.h:
+
+CslListCtrlServer.h:
+
+CslListCtrlInfo.h:
+
+CslDlgOutput.h:
+
+CslDlgTraffic.h:
+
+CslListCtrlCountry.h:
+
+CslListCtrlPlayerSearch.h:
+
+CslGameConnection.h:
+
+CslTTS.h:
+
+CslIPC.h:
+
+CslIRC.h:
+
+/usr/include/wx-2.8/wx/richtext/richtextbuffer.h:
+
+/usr/include/wx-2.8/wx/list.h:
+
+/usr/include/wx-2.8/wx/textctrl.h:
+
+/usr/include/wx-2.8/wx/bitmap.h:
+
+/usr/include/wx-2.8/wx/image.h:
+
+/usr/include/wx-2.8/wx/cmdproc.h:
+
+/usr/include/wx-2.8/wx/object.h:
+
+/usr/include/wx-2.8/wx/txtstrm.h:
+
+/usr/include/wx-2.8/wx/stream.h:
+
+/usr/include/wx-2.8/wx/convauto.h:
+
+/usr/include/wx-2.8/wx/dataobj.h:
+
+irc/CslIRCEngine.h:
+
+../src/irc/libircclient/include/libircclient.h:
+
+/usr/include/sys/select.h:
+
+../src/irc/libircclient/include/libirc_errors.h:
+
+../src/irc/libircclient/include/libirc_rfcnumeric.h:
+
+../src/irc/libircclient/include/libirc_events.h:
+
+../src/irc/libircclient/include/libirc_options.h:
+
+img/csl_48_png.h:
+
+img/csl_24.xpm:
+
+img/master_24.xpm:
+
+img/close_14.xpm:
+
+img/close_high_14.xpm:
+
+img/close_press_14.xpm:

@@ -1,0 +1,116 @@
+CslListCtrlServer.o: CslListCtrlServer.cpp engine/CslEngine.h \
+ engine/CslUDP.h engine/CslGame.h engine/CslExtendedInfo.h CslApp.h \
+ CslDlgAddServer.h CslDlgOutput.h CslStatusBar.h CslArt.h CslMenu.h \
+ CslGeoIP.h ../src/libGeoIP/GeoIP.h /usr/include/sys/types.h \
+ /usr/include/sys/socket.h /usr/include/netinet/in.h \
+ /usr/include/features.h /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/types.h \
+ /usr/include/bits/in.h /usr/include/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/arpa/inet.h \
+ /usr/include/stdio.h /usr/include/stdlib.h /usr/include/string.h \
+ /usr/include/sys/stat.h CslSettings.h /usr/include/wx-2.8/wx/wxprec.h \
+ /usr/include/wx-2.8/wx/defs.h /usr/include/wx-2.8/wx/wx.h \
+ CslGameConnection.h CslListCtrlPlayer.h CslListCtrl.h CslToolTip.h \
+ CslListCtrlServer.h img/ext_green_8.xpm img/sortasc_16.xpm \
+ img/sortdsc_16.xpm img/sortasclight_16.xpm img/sortdsclight_16.xpm \
+ img/red_list_16.xpm img/green_list_16.xpm img/yellow_list_16.xpm \
+ img/grey_list_16.xpm img/red_ext_list_16.xpm img/green_ext_list_16.xpm \
+ img/yellow_ext_list_16.xpm
+
+engine/CslEngine.h:
+
+engine/CslUDP.h:
+
+engine/CslGame.h:
+
+engine/CslExtendedInfo.h:
+
+CslApp.h:
+
+CslDlgAddServer.h:
+
+CslDlgOutput.h:
+
+CslStatusBar.h:
+
+CslArt.h:
+
+CslMenu.h:
+
+CslGeoIP.h:
+
+../src/libGeoIP/GeoIP.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/features.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/in.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/string.h:
+
+/usr/include/sys/stat.h:
+
+CslSettings.h:
+
+/usr/include/wx-2.8/wx/wxprec.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/wx.h:
+
+CslGameConnection.h:
+
+CslListCtrlPlayer.h:
+
+CslListCtrl.h:
+
+CslToolTip.h:
+
+CslListCtrlServer.h:
+
+img/ext_green_8.xpm:
+
+img/sortasc_16.xpm:
+
+img/sortdsc_16.xpm:
+
+img/sortasclight_16.xpm:
+
+img/sortdsclight_16.xpm:
+
+img/red_list_16.xpm:
+
+img/green_list_16.xpm:
+
+img/yellow_list_16.xpm:
+
+img/grey_list_16.xpm:
+
+img/red_ext_list_16.xpm:
+
+img/green_ext_list_16.xpm:
+
+img/yellow_ext_list_16.xpm:

@@ -1,0 +1,8 @@
+CslDlgAbout.o: CslDlgAbout.cpp CslLicense.h CslDlgAbout.h \
+ img/csl_256_png.h
+
+CslLicense.h:
+
+CslDlgAbout.h:
+
+img/csl_256_png.h:

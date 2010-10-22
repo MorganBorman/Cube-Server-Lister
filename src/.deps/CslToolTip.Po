@@ -1,0 +1,22 @@
+CslToolTip.o: CslToolTip.cpp CslSettings.h \
+ /usr/include/wx-2.8/wx/wxprec.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/wx.h engine/CslEngine.h engine/CslUDP.h \
+ engine/CslGame.h engine/CslExtendedInfo.h CslToolTip.h
+
+CslSettings.h:
+
+/usr/include/wx-2.8/wx/wxprec.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/wx.h:
+
+engine/CslEngine.h:
+
+engine/CslUDP.h:
+
+engine/CslGame.h:
+
+engine/CslExtendedInfo.h:
+
+CslToolTip.h:

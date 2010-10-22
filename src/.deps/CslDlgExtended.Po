@@ -1,0 +1,38 @@
+CslDlgExtended.o: CslDlgExtended.cpp engine/CslGame.h \
+ engine/CslExtendedInfo.h CslMenu.h CslArt.h CslSettings.h \
+ /usr/include/wx-2.8/wx/wxprec.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/wx.h engine/CslEngine.h engine/CslUDP.h \
+ engine/CslGame.h CslDlgExtended.h CslPanelMap.h CslListCtrlPlayer.h \
+ CslListCtrl.h CslToolTip.h
+
+engine/CslGame.h:
+
+engine/CslExtendedInfo.h:
+
+CslMenu.h:
+
+CslArt.h:
+
+CslSettings.h:
+
+/usr/include/wx-2.8/wx/wxprec.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/wx.h:
+
+engine/CslEngine.h:
+
+engine/CslUDP.h:
+
+engine/CslGame.h:
+
+CslDlgExtended.h:
+
+CslPanelMap.h:
+
+CslListCtrlPlayer.h:
+
+CslListCtrl.h:
+
+CslToolTip.h:

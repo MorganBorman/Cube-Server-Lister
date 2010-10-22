@@ -1,0 +1,17 @@
+CslGameAssaultCube.o: CslGameAssaultCube.cpp CslEngine.h CslUDP.h \
+ CslGame.h CslExtendedInfo.h CslGameAssaultCube.h ../img/ac_16_png.h \
+ ../img/ac_24_png.h
+
+CslEngine.h:
+
+CslUDP.h:
+
+CslGame.h:
+
+CslExtendedInfo.h:
+
+CslGameAssaultCube.h:
+
+../img/ac_16_png.h:
+
+../img/ac_24_png.h:

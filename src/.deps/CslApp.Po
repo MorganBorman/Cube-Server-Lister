@@ -1,0 +1,116 @@
+CslApp.o: CslApp.cpp engine/CslEngine.h engine/CslUDP.h engine/CslGame.h \
+ engine/CslExtendedInfo.h CslFrame.h CslVersionCheck.h CslMenu.h CslArt.h \
+ CslDlgExtended.h CslPanelMap.h CslListCtrlPlayer.h CslListCtrl.h \
+ CslToolTip.h CslStatusBar.h CslDlgSettings.h CslSettings.h \
+ /usr/include/wx-2.8/wx/wxprec.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/wx.h CslListCtrlServer.h CslListCtrlInfo.h \
+ CslDlgOutput.h CslDlgTraffic.h CslListCtrlCountry.h \
+ CslListCtrlPlayerSearch.h CslGameConnection.h CslTTS.h CslIPC.h CslIRC.h \
+ /usr/include/wx-2.8/wx/richtext/richtextbuffer.h \
+ /usr/include/wx-2.8/wx/list.h /usr/include/wx-2.8/wx/textctrl.h \
+ /usr/include/wx-2.8/wx/bitmap.h /usr/include/wx-2.8/wx/image.h \
+ /usr/include/wx-2.8/wx/cmdproc.h /usr/include/wx-2.8/wx/object.h \
+ /usr/include/wx-2.8/wx/txtstrm.h /usr/include/wx-2.8/wx/stream.h \
+ /usr/include/wx-2.8/wx/convauto.h /usr/include/wx-2.8/wx/dataobj.h \
+ irc/CslIRCEngine.h ../src/irc/libircclient/include/libircclient.h \
+ /usr/include/sys/select.h \
+ ../src/irc/libircclient/include/libirc_errors.h \
+ ../src/irc/libircclient/include/libirc_rfcnumeric.h \
+ ../src/irc/libircclient/include/libirc_events.h \
+ ../src/irc/libircclient/include/libirc_options.h CslApp.h
+
+engine/CslEngine.h:
+
+engine/CslUDP.h:
+
+engine/CslGame.h:
+
+engine/CslExtendedInfo.h:
+
+CslFrame.h:
+
+CslVersionCheck.h:
+
+CslMenu.h:
+
+CslArt.h:
+
+CslDlgExtended.h:
+
+CslPanelMap.h:
+
+CslListCtrlPlayer.h:
+
+CslListCtrl.h:
+
+CslToolTip.h:
+
+CslStatusBar.h:
+
+CslDlgSettings.h:
+
+CslSettings.h:
+
+/usr/include/wx-2.8/wx/wxprec.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/wx.h:
+
+CslListCtrlServer.h:
+
+CslListCtrlInfo.h:
+
+CslDlgOutput.h:
+
+CslDlgTraffic.h:
+
+CslListCtrlCountry.h:
+
+CslListCtrlPlayerSearch.h:
+
+CslGameConnection.h:
+
+CslTTS.h:
+
+CslIPC.h:
+
+CslIRC.h:
+
+/usr/include/wx-2.8/wx/richtext/richtextbuffer.h:
+
+/usr/include/wx-2.8/wx/list.h:
+
+/usr/include/wx-2.8/wx/textctrl.h:
+
+/usr/include/wx-2.8/wx/bitmap.h:
+
+/usr/include/wx-2.8/wx/image.h:
+
+/usr/include/wx-2.8/wx/cmdproc.h:
+
+/usr/include/wx-2.8/wx/object.h:
+
+/usr/include/wx-2.8/wx/txtstrm.h:
+
+/usr/include/wx-2.8/wx/stream.h:
+
+/usr/include/wx-2.8/wx/convauto.h:
+
+/usr/include/wx-2.8/wx/dataobj.h:
+
+irc/CslIRCEngine.h:
+
+../src/irc/libircclient/include/libircclient.h:
+
+/usr/include/sys/select.h:
+
+../src/irc/libircclient/include/libirc_errors.h:
+
+../src/irc/libircclient/include/libirc_rfcnumeric.h:
+
+../src/irc/libircclient/include/libirc_events.h:
+
+../src/irc/libircclient/include/libirc_options.h:
+
+CslApp.h:

@@ -1,0 +1,7 @@
+CslIPC.o: CslIPC.cpp engine/CslGame.h engine/CslExtendedInfo.h CslIPC.h
+
+engine/CslGame.h:
+
+engine/CslExtendedInfo.h:
+
+CslIPC.h:

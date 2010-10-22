@@ -1,0 +1,28 @@
+CslArt.o: CslArt.cpp CslArt.h img/about_16.xpm img/csl_16.xpm \
+ img/connect_16.xpm img/connect_pw_16.xpm img/filter_16.xpm \
+ img/geo_16.xpm img/notification_16.xpm img/extinfo_micro_16.xpm \
+ img/extinfo_mini_16.xpm img/extinfo_default_16.xpm img/flags/unknown.xpm
+
+CslArt.h:
+
+img/about_16.xpm:
+
+img/csl_16.xpm:
+
+img/connect_16.xpm:
+
+img/connect_pw_16.xpm:
+
+img/filter_16.xpm:
+
+img/geo_16.xpm:
+
+img/notification_16.xpm:
+
+img/extinfo_micro_16.xpm:
+
+img/extinfo_mini_16.xpm:
+
+img/extinfo_default_16.xpm:
+
+img/flags/unknown.xpm:

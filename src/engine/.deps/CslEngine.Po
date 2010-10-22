@@ -1,0 +1,10 @@
+CslEngine.o: CslEngine.cpp CslEngine.h CslUDP.h CslGame.h \
+ CslExtendedInfo.h
+
+CslEngine.h:
+
+CslUDP.h:
+
+CslGame.h:
+
+CslExtendedInfo.h:

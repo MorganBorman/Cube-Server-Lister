@@ -1,0 +1,12 @@
+CslDlgTraffic.o: CslDlgTraffic.cpp engine/CslEngine.h engine/CslUDP.h \
+ engine/CslGame.h engine/CslExtendedInfo.h CslDlgTraffic.h
+
+engine/CslEngine.h:
+
+engine/CslUDP.h:
+
+engine/CslGame.h:
+
+engine/CslExtendedInfo.h:
+
+CslDlgTraffic.h:
