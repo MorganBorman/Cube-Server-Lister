@@ -1,3 +1,0 @@
-CslExtendedInfo.o: CslExtendedInfo.cpp CslExtendedInfo.h
-
-CslExtendedInfo.h:

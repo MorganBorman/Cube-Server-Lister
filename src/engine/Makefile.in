@@ -52,7 +52,7 @@ libcslengine_a_AR = $(AR) $(ARFLAGS)
 libcslengine_a_LIBADD =
 am_libcslengine_a_OBJECTS = CslEngine.$(OBJEXT) \
 	CslExtendedInfo.$(OBJEXT) CslGame.$(OBJEXT) \
-	CslGameAssaultCube.$(OBJEXT) CslGameBloodFrontier.$(OBJEXT) \
+	CslGameAssaultCube.$(OBJEXT) CslGameBloodFrontier.$(OBJEXT) CslGameRedEclipse.$(OBJEXT) \
 	CslGameCube.$(OBJEXT) CslGameSauerbraten.$(OBJEXT) \
 	CslUDP.$(OBJEXT) cube_tools.$(OBJEXT)
 libcslengine_a_OBJECTS = $(am_libcslengine_a_OBJECTS)
@@ -226,13 +226,13 @@ top_srcdir = @top_srcdir@
 AM_CXXFLAGS = -DLOCALEDIR=\"$(localedir)\" -DDATADIR=\"$(datadir)/csl\"
 METASOURCES = AUTO
 noinst_HEADERS = CslCharEncoding.h CslEngine.h CslExtendedInfo.h CslGame.h \
-	CslGameAssaultCube.h CslGameBloodFrontier.h CslGameCube.h CslGameSauerbraten.h CslTools.h \
+	CslGameAssaultCube.h CslGameBloodFrontier.h CslGameRedEclipse.h CslGameCube.h CslGameSauerbraten.h CslTools.h \
 	CslUDP.h cube_tools.h
 
 noinst_LIBRARIES = libcslengine.a libcsltools.a
 libcsltools_a_SOURCES = CslCharEncoding.cpp CslTools.cpp
 libcslengine_a_SOURCES = CslEngine.cpp CslExtendedInfo.cpp CslGame.cpp \
-	CslGameAssaultCube.cpp CslGameBloodFrontier.cpp CslGameCube.cpp CslGameSauerbraten.cpp \
+	CslGameAssaultCube.cpp CslGameBloodFrontier.cpp CslGameRedEclipse.cpp CslGameCube.cpp CslGameSauerbraten.cpp \
 	CslUDP.cpp cube_tools.cpp
 
 INCLUDES = -I$(top_builddir)/src/pch
@@ -294,6 +294,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/CslGame.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/CslGameAssaultCube.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/CslGameBloodFrontier.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/CslGameRedEclipse.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/CslGameCube.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/CslGameSauerbraten.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/CslTools.Po@am__quote@

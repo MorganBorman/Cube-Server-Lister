@@ -23,6 +23,7 @@
 #include "engine/CslGameSauerbraten.h"
 #include "engine/CslGameAssaultCube.h"
 #include "engine/CslGameBloodFrontier.h"
+#include "engine/CslGameRedEclipse.h"
 #include "engine/CslGameCube.h"
 #include "CslApp.h"
 #include "CslGeoIP.h"
@@ -131,6 +132,7 @@ CslFrame::CslFrame(wxWindow* parent,int id,const wxString& title,
         m_engine->AddGame(new CslGameSauerbraten());
         m_engine->AddGame(new CslGameAssaultCube());
         m_engine->AddGame(new CslBloodFrontier());
+        m_engine->AddGame(new CslRedEclipse());
         m_engine->AddGame(new CslGameCube());
     }
 

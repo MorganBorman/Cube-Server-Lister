@@ -1,5 +1,0 @@
-CslMapCfgTool.o: CslMapCfgTool.cpp CslPanelMap.h CslMapCfgTool.h
-
-CslPanelMap.h:
-
-CslMapCfgTool.h:

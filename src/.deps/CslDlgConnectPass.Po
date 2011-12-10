@@ -1,3 +1,0 @@
-CslDlgConnectPass.o: CslDlgConnectPass.cpp CslDlgConnectPass.h
-
-CslDlgConnectPass.h:

@@ -72,6 +72,8 @@ data/csl.desktop.in
 ./src/engine/CslGameAssaultCube.h
 ./src/engine/CslGameBloodFrontier.cpp
 ./src/engine/CslGameBloodFrontier.h
+./src/engine/CslGameRedEclipse.cpp
+./src/engine/CslGameRedEclipse.h
 ./src/engine/CslGame.cpp
 ./src/engine/CslGameCube.cpp
 ./src/engine/CslGameCube.h

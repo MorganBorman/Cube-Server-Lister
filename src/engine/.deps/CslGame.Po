@@ -1,5 +1,0 @@
-CslGame.o: CslGame.cpp CslGame.h CslExtendedInfo.h
-
-CslGame.h:
-
-CslExtendedInfo.h:
