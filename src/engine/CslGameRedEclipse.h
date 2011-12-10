@@ -22,7 +22,8 @@
 #define CSLREDECLIPSE_H
 
 /**
- @author Glen Masgai <mimosius@users.sourceforge.net>
+ @author Morgan Borman <morgan.borman@gmail.com>
+ Adapted from the Blood Frontier support provided by the original author: Glen Masgai
 */
 
 #define CSL_DEFAULT_NAME_RE           wxT("Red Eclipse")
