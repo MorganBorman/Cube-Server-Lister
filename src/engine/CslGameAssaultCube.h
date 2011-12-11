@@ -26,12 +26,12 @@
 */
 
 #define CSL_DEFAULT_NAME_AC           wxT("AssaultCube")
-#define CSL_LAST_PROTOCOL_AC          1128
+#define CSL_LAST_PROTOCOL_AC          1132
 
 #define CSL_DEFAULT_PORT_AC           28763
 
-#define CSL_DEFAULT_MASTER_AC         wxT("masterserver.cubers.net")
-#define CSL_DEFAULT_MASTER_PATH_AC    wxT("/cgi-bin/actioncube.pl/retrieve.do?item=list")
+#define CSL_DEFAULT_MASTER_AC         wxT("assault.cubers.net")
+#define CSL_DEFAULT_MASTER_PORT_AC    28760
 
 #define CSL_DEFAULT_INJECT_DIR_AC     wxT("config/")
 #define CSL_DEFAULT_INJECT_FILE_AC    wxT("autoexec.cfg")

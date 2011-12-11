@@ -103,7 +103,7 @@ mutstype[] =
 };
 
 
-CslRedEclipse::CslRedEclipse()
+CslGameRedEclipse::CslGameRedEclipse()
 {
     m_name=CSL_DEFAULT_NAME_RE;
     m_defaultMasterConnection=CslMasterConnection(CSL_DEFAULT_MASTER_RE,CSL_DEFAULT_MASTER_PORT_RE);
@@ -119,11 +119,11 @@ CslRedEclipse::CslRedEclipse()
     m_icon24=BitmapFromData(wxBITMAP_TYPE_PNG,re_24_png,sizeof(re_24_png));
 }
 
-CslRedEclipse::~CslRedEclipse()
+CslGameRedEclipse::~CslGameRedEclipse()
 {
 }
 
-wxString CslRedEclipse::GetModeName(wxInt32 n,wxInt32 m) const
+wxString CslGameRedEclipse::GetModeName(wxInt32 n,wxInt32 m) const
 {
     if (n<0 || m<0 || (size_t)n>=sizeof(gametype)/sizeof(gametype[0]))
         return wxString(wxT("unknown"));
@@ -148,7 +148,7 @@ wxString CslRedEclipse::GetModeName(wxInt32 n,wxInt32 m) const
     return mode;
 }
 
-const wxChar* CslRedEclipse::GetVersionName(wxInt32 prot) const
+const wxChar* CslGameRedEclipse::GetVersionName(wxInt32 prot) const
 {
     static const wxChar* versions[] =
     {
@@ -166,7 +166,7 @@ const wxChar* CslRedEclipse::GetVersionName(wxInt32 prot) const
         return versions[v];
 }
 
-const wxChar* CslRedEclipse::GetWeaponName(wxInt32 n) const
+const wxChar* CslGameRedEclipse::GetWeaponName(wxInt32 n) const
 {
     static const wxChar* weapons[] =
     {
@@ -179,7 +179,7 @@ const wxChar* CslRedEclipse::GetWeaponName(wxInt32 n) const
            weapons[n] : T2C(_("unknown"));
 }
 
-void CslRedEclipse::GetPlayerstatsDescriptions(vector<wxString>& desc) const
+void CslGameRedEclipse::GetPlayerstatsDescriptions(vector<wxString>& desc) const
 {
     desc.add(_("Player"));
     desc.add(_("Team"));
@@ -193,7 +193,7 @@ void CslRedEclipse::GetPlayerstatsDescriptions(vector<wxString>& desc) const
     desc.add(_("Weapon"));
 }
 
-wxInt32 CslRedEclipse::GetBestTeam(CslTeamStats& stats,wxInt32 prot) const
+wxInt32 CslGameRedEclipse::GetBestTeam(CslTeamStats& stats,wxInt32 prot) const
 {
     wxInt32 i,best=-1;
 
@@ -211,7 +211,7 @@ wxInt32 CslRedEclipse::GetBestTeam(CslTeamStats& stats,wxInt32 prot) const
     return best;
 }
 
-bool CslRedEclipse::ParseDefaultPong(ucharbuf& buf,CslServerInfo& info) const
+bool CslGameRedEclipse::ParseDefaultPong(ucharbuf& buf,CslServerInfo& info) const
 {
     vector<int>attr;
     wxUint32 l,numattr;
@@ -297,7 +297,7 @@ bool CslRedEclipse::ParseDefaultPong(ucharbuf& buf,CslServerInfo& info) const
     return !buf.overread();
 }
 
-bool CslRedEclipse::ParsePlayerPong(wxUint32 protocol,ucharbuf& buf,CslPlayerStatsData& info) const
+bool CslGameRedEclipse::ParsePlayerPong(wxUint32 protocol,ucharbuf& buf,CslPlayerStatsData& info) const
 {
     char text[_MAXDEFSTR];
 
@@ -333,7 +333,7 @@ bool CslRedEclipse::ParsePlayerPong(wxUint32 protocol,ucharbuf& buf,CslPlayerSta
     return !buf.overread();
 }
 
-bool CslRedEclipse::ParseTeamPong(wxUint32 protocol,ucharbuf& buf,CslTeamStatsData& info) const
+bool CslGameRedEclipse::ParseTeamPong(wxUint32 protocol,ucharbuf& buf,CslTeamStatsData& info) const
 {
     wxInt32 i;
     char text[_MAXDEFSTR];
@@ -349,7 +349,7 @@ bool CslRedEclipse::ParseTeamPong(wxUint32 protocol,ucharbuf& buf,CslTeamStatsDa
     return !buf.overread();
 }
 
-void CslRedEclipse::SetClientSettings(const CslGameClientSettings& settings)
+void CslGameRedEclipse::SetClientSettings(const CslGameClientSettings& settings)
 {
     CslGameClientSettings set=settings;
 
@@ -384,7 +384,7 @@ void CslRedEclipse::SetClientSettings(const CslGameClientSettings& settings)
     m_clientSettings=set;
 }
 
-wxString CslRedEclipse::GameStart(CslServerInfo *info,wxUint32 mode,wxString& error)
+wxString CslGameRedEclipse::GameStart(CslServerInfo *info,wxUint32 mode,wxString& error)
 {
     wxString address,password,path,script;
     wxString bin=m_clientSettings.Binary;
@@ -465,7 +465,26 @@ wxString CslRedEclipse::GameStart(CslServerInfo *info,wxUint32 mode,wxString& er
     return bin;
 }
 
-wxInt32 CslRedEclipse::GameEnd(wxString& error)
+wxInt32 CslGameRedEclipse::GameEnd(wxString& error)
 {
     return CSL_ERROR_NONE;
+}
+
+bool CslGameRedEclipse::GetMapImagePaths(wxArrayString& paths) const
+{
+    wxInt32 pos;
+    wxString path;
+
+    if (!m_clientSettings.GamePath.IsEmpty())
+    {
+        path<<m_clientSettings.GamePath<<wxT("data")<<PATHDIV<<wxT("maps")<<PATHDIV;
+        paths.Add(path);
+    }
+
+    //TODO look for extra package directories
+    if ((pos=m_clientSettings.Options.Find(wxT("-k")))!=wxNOT_FOUND)
+    {
+    }
+
+    return !paths.IsEmpty();
 }

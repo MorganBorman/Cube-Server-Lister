@@ -50,7 +50,7 @@ enum { CS_ALIVE, CS_DEAD, CS_SPAWNING, CS_LAGGED, CS_EDITING, CS_SPECTATE };
 CslGameAssaultCube::CslGameAssaultCube()
 {
     m_name=CSL_DEFAULT_NAME_AC;
-    m_defaultMasterConnection=CslMasterConnection(CSL_DEFAULT_MASTER_AC,CSL_DEFAULT_MASTER_PATH_AC);
+    m_defaultMasterConnection=CslMasterConnection(CSL_DEFAULT_MASTER_AC,CSL_DEFAULT_MASTER_PORT_AC);
     m_capabilities=CSL_CAPABILITY_EXTINFO | CSL_CAPABILITY_CUSTOM_CONFIG |
                    CSL_CAPABILITY_CONNECT_PASS | CSL_CAPABILITY_CONNECT_ADMIN_PASS;
 #ifdef __WXGTK__
@@ -68,7 +68,8 @@ const wxChar* CslGameAssaultCube::GetVersionName(wxInt32 prot) const
 {
     static const wxChar* versions[] =
     {
-        wxT("1.0.x"),wxT("1.0beta2"),wxT("1.0beta1"),
+    	wxT("1.1.0.4"),wxT("1.1.0.3"),wxT("1.1.0.2"),wxT("1.1.0.1"),
+    	wxT("1.0.x"),wxT("1.0beta2"),wxT("1.0beta1"),
         wxT("0.93.x"),wxT("0.92"),wxT("0.91.x"),wxT("0.90")
     };
 

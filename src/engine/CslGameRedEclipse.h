@@ -35,11 +35,11 @@
 #define CSL_DEFAULT_MASTER_PORT_RE    28800
 
 
-class CslRedEclipse : public CslGame
+class CslGameRedEclipse : public CslGame
 {
     public:
-        CslRedEclipse();
-        ~CslRedEclipse();
+        CslGameRedEclipse();
+        ~CslGameRedEclipse();
 
     private:
         const wxChar* GetVersionName(wxInt32 prot) const;
@@ -57,6 +57,7 @@ class CslRedEclipse : public CslGame
         void SetClientSettings(const CslGameClientSettings& settings);
         wxString GameStart(CslServerInfo *info,wxUint32 mode,wxString& error);
         wxInt32 GameEnd(wxString& error);
+        bool GetMapImagePaths(wxArrayString& paths) const;
 };
 
 #endif //CSLREDECLIPSE_H

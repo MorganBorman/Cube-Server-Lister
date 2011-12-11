@@ -16096,7 +16096,7 @@ CXXFLAGS="$CXXFLAGS $WX_CXXFLAGS"
 
 
 
-ac_config_files="$ac_config_files Makefile data/Makefile data/maps/Makefile data/maps/Sauerbraten/254/Makefile data/maps/Sauerbraten/256/Makefile data/maps/Sauerbraten/Makefile po/Makefile.in src/Makefile src/engine/Makefile src/irc/Makefile src/irc/libircclient/Makefile src/irc/libircclient/include/Makefile src/irc/libircclient/src/Makefile src/libGeoIP/Makefile src/pch/Makefile"
+ac_config_files="$ac_config_files Makefile data/Makefile data/maps/Makefile data/maps/Sauerbraten/254/Makefile data/maps/Sauerbraten/256/Makefile data/maps/Sauerbraten/Makefile data/maps/RedEclipse/Makefile data/maps/RedEclipse/256/Makefile po/Makefile.in src/Makefile src/engine/Makefile src/irc/Makefile src/irc/libircclient/Makefile src/irc/libircclient/include/Makefile src/irc/libircclient/src/Makefile src/libGeoIP/Makefile src/pch/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -17209,6 +17209,8 @@ do
     "data/maps/Sauerbraten/254/Makefile") CONFIG_FILES="$CONFIG_FILES data/maps/Sauerbraten/254/Makefile" ;;
     "data/maps/Sauerbraten/256/Makefile") CONFIG_FILES="$CONFIG_FILES data/maps/Sauerbraten/256/Makefile" ;;
     "data/maps/Sauerbraten/Makefile") CONFIG_FILES="$CONFIG_FILES data/maps/Sauerbraten/Makefile" ;;
+    "data/maps/RedEclipse/256/Makefile") CONFIG_FILES="$CONFIG_FILES data/maps/RedEclipse/256/Makefile" ;;
+    "data/maps/RedEclipse/Makefile") CONFIG_FILES="$CONFIG_FILES data/maps/RedEclipse/Makefile" ;;
     "po/Makefile.in") CONFIG_FILES="$CONFIG_FILES po/Makefile.in" ;;
     "src/Makefile") CONFIG_FILES="$CONFIG_FILES src/Makefile" ;;
     "src/engine/Makefile") CONFIG_FILES="$CONFIG_FILES src/engine/Makefile" ;;

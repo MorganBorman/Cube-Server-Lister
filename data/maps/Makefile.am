@@ -1,1 +1,1 @@
-SUBDIRS = Sauerbraten
+SUBDIRS = Sauerbraten RedEclipse
