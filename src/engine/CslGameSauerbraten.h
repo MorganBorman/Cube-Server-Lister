@@ -26,7 +26,7 @@
 */
 
 #define CSL_DEFAULT_NAME_SB           wxT("Sauerbraten")
-#define CSL_LAST_PROTOCOL_SB          258
+#define CSL_LAST_PROTOCOL_SB          259
 
 #define CSL_DEFAULT_PORT_SB           28785
 

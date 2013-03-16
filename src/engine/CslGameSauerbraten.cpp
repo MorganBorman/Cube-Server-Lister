@@ -53,7 +53,7 @@ const wxChar* CslGameSauerbraten::GetVersionName(wxInt32 prot) const
 {
     static const wxChar* versions[] =
     {
-        wxT("Justice"),wxT("Trooper"),wxT("CTF"),wxT("Assassin"),wxT("Summer"),
+		wxT("Collect"),wxT("Justice"),wxT("Trooper"),wxT("CTF"),wxT("Assassin"),wxT("Summer"),
         wxT("Spring"),wxT("Gui"),wxT("Water"),wxT("Normalmap"),
         wxT("Sp"),wxT("Occlusion"),wxT("Shader"),wxT("Physics"),
         wxT("Mp"),wxT(""),wxT("Agc"),wxT("Quakecon"),wxT("Independence")
@@ -92,7 +92,8 @@ const wxChar* CslGameSauerbraten::GetModeName(wxInt32 mode,wxInt32 prot) const
             wxT("ffa"),wxT("coop edit"),wxT("teamplay"),wxT("instagib"),wxT("instagib team"),
             wxT("efficiency"),wxT("efficiency team"),wxT("tactics"),wxT("tactics team"),
             wxT("capture"),wxT("regen capture"),wxT("ctf"),wxT("insta ctf"),
-            wxT("protect"),wxT("insta protect"),wxT("hold"),wxT("insta hold"),wxT("efficiency ctf"),wxT("efficiency protect"),wxT("efficiency hold")
+            wxT("protect"),wxT("insta protect"),wxT("hold"),wxT("insta hold"),wxT("efficiency ctf"),wxT("efficiency protect"),wxT("efficiency hold"),
+            wxT("collect"),wxT("insta collect"),wxT("efficiency collect")
         };
         return (mode>=0 && (size_t)mode<sizeof(modes)/sizeof(modes[0])) ?
                modes[mode] : T2C(_("unknown"));

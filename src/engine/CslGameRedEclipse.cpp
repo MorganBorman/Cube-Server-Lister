@@ -152,7 +152,7 @@ const wxChar* CslGameRedEclipse::GetVersionName(wxInt32 prot) const
 {
     static const wxChar* versions[] =
     {
-        wxT("Supernova"),wxT("Ides")
+		wxT("Galactic"),wxT("Cosmic"),wxT("Supernova"),wxT("Ides")
     };
 
     wxInt32 v=CSL_LAST_PROTOCOL_RE-prot;
